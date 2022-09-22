@@ -1,0 +1,336 @@
+js came from ecma script
+ versionS:-
+ es11(ecma script 2020)
+es12(ecma script 2021)--current version
+ js is a clientside scripting(js,angular,react,knockout....) until nodejs(server side js)
+FrontDeveloper
+MEANStackDeveloper(MongoDB,Express,Angular,Nodejs)
+MERNStackDeveloper(MongoDB,Express,React,Nodejs)
+FullstackDeveloper with nodejs
+it gives run time content to the html page
+it is used to validate the form
+
+used to perform functions and events
+is an action when trigger
+it is case sensitive
+we can call js in head and body tags
+
+script in body tag
+this script will be perform automatically when load broswer(open)
+this script generates content to the body
+statement
+it is a command to the browser,is to tell the browser what to do.
+i/p statement(form)o/p statement
+document.write();
+embed html tags into js by using strings(" ") in document.write;
+if outer string start with ""(double quotes) then inner string should start with ''
+if outer string start with '' (single quotes)then inner string should start with ""
+template string (backtick)`` backtick introduced in es6
+variable
+is a container to store the info
+declaration of variable
+var a;
+initialization:-
+var a=10;
+a is an identifier(variablename)
+
+10 is the value(literal)
+value is change dynamically
+= is an assignment operator
+datatypes:-
+primitive datatypes:-
+string
+number
+boolean
+undefined
+null
+non primitive types:-
+function
+object
+RegExp
+Array
+=================================
+js doesn't contains static type checking
+=====================================
+datatypes:-
+js doesn't contains static type checking.
+we'll get the datatype of the variable based on assigning value
+typeof() is used to find the data type of the variable
+
+note:-+ is the string concatenation operator
+debugging:-pause the execution of the code
+types of debugging:-
+1)debugger keyword in program
+2)Breakpoint in browser source code
+uses of debugging:-
+1)we can check the step by step execution of the code
+2)we can check the scope of variable
+3)we can observe(watch) the variable value
+4)find the bugs 
+=======================================================
+var keyword:-
+->if you declare variable with var keyword globally then it's a global scope 
+->global scope variables are load immediatly when the document is load 
+(then these are effecting the performance of page)but 
+values will assign to the variables after interpreter execute that particular step
+->can able to redeclare(subsequent declarations are possible) variables
+->hoisting possible
+
+===========================================
+let keyword:-
+->if you declare variable with let globally then it's a script scope
+->script scope variables are load after scriptlet(particular step) executed by javascript engine 
+->if you declare variable with let keyword in conditional stmts or in  loops then it's a block scoped 
+->can not able to redeclare(subsequent declaration is not possible) variables
+->variable hoisting is not possible 
+==========================================
+const keyword:-
+->if you declare variable with const keyword in loops or conditional stmts then it's a block scoped varible
+->if you declare variable with const globally then it's a script scope variable.
+
+->can not able to redeclare(subsequent declaration is not possible)
+
+->can not update value of const variable
+->can not redeclare variable
+
+let and const keys introduced in es6
+
+=================================================================
+var scope:-
+1)global
+2)Script
+3)block(conditional stmt)
+4)local(functions)
+5)closure(functions)
+=================================================================
+identifier namespacing:
+!)an identifier should  start with alphabet or _ or $
+2)we should not mention spaces and hypens b/w the words of an identifier
+3)we should mention underscore(_) or camelcaps for separating words of an identifier
+===================================================================
+operator:-is a symbol used to perform mathametical calc
+1)arithmetical operators(+,-,*,%,/)
+% returns remainder10%2,22%3,10%3,86%3,22/3
+/ returns quotient
+2)assignment operators(=,+=,-=,*=,%=,/=)
+a+=b means a=a+b;30+5=35
+a-=b means a=a-b;
+a*=b means a=a*b;
+a/=b means a=a/b;
+a%=b means a=a%b;
+3)comparison operators(>,<,<=,>=,==,===,!=)
+4)logical operators(and(&&),or(||),not(!))
+comparison and logical operators are return boolean value(true or false)
+thatswhy these are used in conditional statements
+5)increment/decrement operators(++,--)
+increment:it increment by 1
+a++ = ++a means a=a+1
+2 types
+1)preincrement(++variable)++a
+first increase value then assign value to the variable
+(increase both side operands)
+2)postincrement(variable++)a++
+first assign value to the variable then increase the value
+(right side operand only increase)
+6)terinary operator(?:)
+condition?result1:result2;
+if the cond is true then result1 will be execute otherwise result2 will be execute
+conditional statements
+
+1)if statement
+if
+syntax
+if(condition)
+{
+//block of code
+}
+condition always returns boolean value(true or false)
+if the cond is true block will be execute otherwise skip the block
+if else
+syntax
+if(condition)
+{
+//block of code
+}
+else
+{
+//block of code
+}
+if the cond is true if block will be execute otherwise else block will be execute
+
+if else if
+if(condition)
+{
+//block of code
+}
+else if(cond)
+{
+//block of code
+}
+else if(cond)
+{
+//block of code
+}
+else if(cond)
+{
+//block of code
+}
+else 
+{
+//block of code
+}
+2)swith statement
+and logical(&&)
+cond1   cond2     result
+T         T        T
+T         F        F
+F         T        F
+F         F        F
+==vs===
+== compares values only where as === compares values and their datatypes also
+switch
+syntax
+initialization;
+switch(exp)
+{
+case 1:
+    stmt1
+      |
+
+      |
+    stmtn;
+break;
+case 2:
+    stmt1
+      |
+
+      |
+    stmtn;
+break;
+case 3:
+    stmt1
+      |
+
+      |
+    stmtn;
+break;
+case 4:
+    stmt1
+      |
+
+      |
+    stmtn;
+break;
+case 5:
+    stmt1
+      |
+
+      |
+    stmtn;
+break;
+default:
+    stmt1
+      |
+
+      |
+    stmtn;
+}
+depending on exp cases will  come
+if exp is in number then cases will  come in number
+if exp is in string then cases will  come in string
+break is used to terminate the case
+if vs switch
+if checks condition by condition where as switch executes the case directly based on exp
+thatswhy switch flow of execution is faster than if
+popup boxes
+1)prompt(used to gives the input value at run time)
+2)alert-used to gives alert msg at run time
+3)confirm
+Number() is convert string to number
+parseInt() ic covert string to number	
+loops:used to repeat the block of code until the condition satisfy.
+
+1)for
+loops always start from initialization
+syntax of for loop
+for(initialization;condition;increment/decrement)
+{
+//block of code
+}
+
+
+
+inner for loop
+for(i=1;i<5;i++)
+{
+for(j=0;j<i;j++)
+{
+document.write("*");
+}
+document.write("<br/>");
+}
+i=1 1<5
+j<i 0<1 *
+    1<1
+i=2 2<5
+j=0 0<2 1<2 **
+i=3 3<5
+j=0 0<3 1<3 2<3 ***
+i=4 0<4 1<4 2<4 3<4 ****
+
+
+5)30(6
+  30
+ ----
+   0
+10)121(12.1
+   10
+  ---
+   21 
+   20
+ ----
+  1
+
+
+10)12(1.2
+   10
+ -----
+   2	
+20)24(1.2
+   20
+  ----
+    4
+3)86(28.6
+  6
+-----
+  26 
+  24
+----
+  20
+  18
+3)22(7.33333
+  21
+-----
+   10
+
+
+
+write a program to find result of the student
+1)student have three subjects
+2)each sub pass mark is 35
+3)if the student is pass then print totalmarks,grade,percentage
+4)if the student is fail then fail will print
+
+===================================================================
+for loop assignment
+write a program to find rersult of 3 students
+
+1)each student have three subjects
+2)each sub pass mark is 35
+3)if the student is pass then print totalmarks,grade,percentage
+4)if the student is fail then fail will print
+
+
+
+
+

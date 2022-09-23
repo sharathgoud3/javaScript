@@ -4,18 +4,27 @@
 // 3)if the student is pass then print totalmarks,grade,percentage
 // 4)if the student is fail then fail will print
 let chemistry=100;
-let physics=45;
-let biology=50;
+let physics=35;
+let biology=35;
 let total = chemistry+physics+biology;
-percentage=total/3*100
-if(chemistry>=35 && physics>=35 && biology>=35){
-    console.log(`student is passed with marks: ${total}`);
-    console.log(`percentage: ${percentage}%`);
+percentage=total/3
+if(chemistry >=35 && physics >=35 && biology >=35){
+    console.log(`student is passed with marks: ${total}/300`);
+    console.log(`percentage: ${Math.round(percentage)}%`);
 }
 else{
-    console.log('fail')
+    console.log('fail');
+}   
+if(chemistry>=35 && physics>=35 && biology>=35 && total>=250 && total<=300){
+    console.log(`grade: A`);
 }
-if(total>=250){
-    console.log(`grade: A`)
+else if(chemistry>=35 && physics>=35 && biology>=35 && total<=249 && total>=200){
+    console.log(`grade: B`);
 }
-else if(total<249 || total)
+else if(chemistry>=35 && physics>=35 && biology>=35 && total<=199 && total>=150){
+    console.log(`grade: C`);
+}
+else if(chemistry>=35 && physics>=35 && biology>=35 && total<=149 && total>=105){
+    console.log(`grade: D`);
+} 
+

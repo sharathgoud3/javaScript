@@ -28,3 +28,27 @@ else if(chemistry>=35 && physics>=35 && biology>=35 && total<=149 && total>=105)
     console.log(`grade: D`);
 } 
 
+
+// let ar = [1,2,3,4,5,4]
+// let filter = ar.filter((item,index)=>{
+//     ar.indexOf(item)===index
+//     console.log(item);
+// console.log(index);
+
+// }
+// );
+
+// console.log(filter);
+
+let char = ['A', 'B', 'A', 'C', 'B','d','e','n',"n",'n',1,'app','app1'];
+
+let uniqueChar = char.filter((c, index) => {
+    return char.indexOf(c) == index;
+});
+
+console.log(uniqueChar);
+
+let chars = ['A', 'B', 'A', 'C', 'B'];
+let uniqueChars = [...new Set(chars)];
+
+console.log(uniqueChars);

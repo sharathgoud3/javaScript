@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            height: 300px;
+            width: 250px;
+            background-color: tomato;
+
+        }
+
+        #circle {
+            height: 350px;
+            width: 300px;
+            background-color: pink;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick='toggle()'>click me</button>
+    <div id="box">
+        <div id="circle"></div> 
+    </div>
+    
+    <script>
+
+        if (document.getElementById("box").style.backgroundColor == "yellow" ||document.getElementById("box").style.backgroundColor == " " ) {
+            function toggle() {              
+                document.getElementById("box").style.backgroundColor == "pink"
+            };
+        }
+        else{          
+               document.getElementById("box").style.backgroundColor == "pink"               
+            }
+    </script>
+</body>
+
+</html>

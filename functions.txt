@@ -1,0 +1,176 @@
+function is a block of code that is reusable.
+cookies:is used to store sever side information at client side
+=>stores 4kb information
+->works when page is online
+localStorage:-
+=>stores 5mb data
+=>works even the page is offline
+================================================
+form fileds:-
+name and id attributes
+if you have to submit form information in the url format then you should be take  name attribute.
+if you have to retrieve form field dynamically and give label for form field then you should be take an id attribute for each form field
+========================================================
+
+datatypes:-
+string,
+number,
+boolean,
+object
+function
+undefined
+null
+--------------------------------------------------------------------
+local variables:-
+variables which are declared inside functions or methods
+the scope  of local variable is the function in which we decalre a variable
+
+global variables:-
+variables which are declared outside function and these variables are load immediatly when document is load
+
+systemDefined:-propmt(),alert(),confirm()
+userdefined:-
+1)function declaration
+2)functionExpression
+3)iife(immediate invoke function exp(self invoked function)
+
+1)non-param(function with out arguments)
+2)params(function with arguments)
+//nonparamfunctionDeclaration
+function functionName()
+{
+//blockOfCOde
+}
+function samp(){
+document.write("samp");
+}
+
+once declare a function then the function will be execute by invoke that.
+
+functionDeclarations
+functionExpression:-
+var functionName=function(){
+}
+immediateInvokeFunctionExp(selfInvokedFunction):-
+(function(){
+//body
+})();
+
+function call in 4ways
+1)callby function name
+=============================================================
+2)function call when triggering an event
+------------------------------------------
+click is an event
+onclick is nothing but on eventhandler
+1)onclick
+2)onload(while loading the page)
+3)onunload(while closing the page) 
+ondblclick
+onchange
+onmouseover
+onmouseout
+onmousedown(press mouse)
+onmouseup(release mouse)
+onmousemove
+onkeydown(press any key on keyborad)
+onkeyup(release any key on keyborad)
+onblur
+onfocus
+onsubmit
+onreset
+===================================================================
+3)function call by create an Object
+4)call() or apply()
+=======================================
+call method:-
+its used to work together with functions and objects
+call method contains two optional arguments(not mandatory, based on requirement you have to pass arguments)
+1)this or an obj
+2)list of arguments in which are passed in function
+
+
+apply method:-
+its used to work together with functions and objects
+call method contains two optional arguments(not mandatory, based on requirement you have to pass arguments)
+1)this or an obj
+2)array of arguments in which are passed in function
+
+=======================================
+
+let obj=new constructor();
+->constructor is the same name as the function name
+->new is an operator for creating new instance
+->constructor executes automatically when create an instance.
+If you create an object for function then that function is called as constructor function
+
+prototype:-
+it's an object for retreiving properties and methods of the function and 
+add properties and methods to the function at runtime
+a
+it will create parallely when function create.
+
+difference b/w functionDeclarations&functionExpressions:-
+functionDeclarations load immediatly while load the page.
+functionExpressions are load when interpreter reaches particular line.
+
+functionreturn
+recursive:-function call by itself
+=======================================================================
+callbackfunction
+1)these functions are not execute directly they will be execute later
+	
+2)we can call function as a parameter inside another function
+=======================================================================
+parameterised function:-
+function functionName(par1,par2------parn)
+{
+//blockOfCOde
+}
+
+Prototype:-
+it is an object create automatically when create function
+->its used to add members dynamically to the function and retreive members dynamically
+call():-
+used to work togeteher with objects and functons
+it contains two arguments(optional parameters)
+1)this or an obj
+2)arguments list
+apply():-it contains two arguments(optional parameters)
+1)this or an obj
+2)array of arguments
+
+closures:-
+
+1)if inner function access parent function properties then parent function
+ is the closure scope to the inner Function
+2)in group of inner functions,if any inner function access parent 
+function properties then parent function is closure to all the inner functions
+
+Obj create in three ways:-
+1) var obj={}<!-- literal type declaration -->
+2)var Obj2=Object.create(obj);
+==========================================================
+3)var obj3=new constructor();
+constructor is the same name as function
+new is an operator for creating new object
+if you create an object for function then taht function is called as constructor function
+=============================================================
+Adding key&value pairs for an object:-
+we can add key&value pairs in three ways
+1)obj.key=val
+2)obj["key"]=val;
+3){key:val,key:val,--------}
+ note:-we can declare function is also a value for key
+obj.getDetails=function(){}
+getDetails(key)
+function(){}(value)
+json(javascript object notation)
+when we create a function prototype object will create parallely.
+when we create an object prototype object(dunder prototype(__proto__)) will create parallely.
+
+
+arrow functions
+
+assignment1:-
+write a program to fill the color in meter based on the value lenth of textarea?

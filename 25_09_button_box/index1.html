@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            height: 300px;
+            width: 250px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick="toggle()">click here</button>
+    <button type="button" onclick="toggle1()">click me</button>
+    <button type="button" onclick="toggle2()">click on</button>
+    <div id="box"></div>
+    <script>
+        function toggle() {
+            if (document.getElementById("box").style.backgroundColor == " " || document.getElementById("box").style.backgroundColor == "green") {
+                document.getElementById("box").style.backgroundColor = "tomato"
+            }
+            else {
+                document.getElementById("box").style.backgroundColor = "green"
+            }
+        };
+        function toggle1() {
+
+            if (document.getElementById("box").style.backgroundColor == " " || document.getElementById("box").style.backgroundColor == "blue") {
+                document.getElementById("box").style.backgroundColor = "tomato"
+            }
+            else {
+                document.getElementById("box").style.backgroundColor = "blue"
+            }
+        };
+        function toggle2() {
+
+            if (document.getElementById("box").style.backgroundColor == " " || document.getElementById("box").style.backgroundColor == "yellow") {
+                document.getElementById("box").style.backgroundColor = "tomato"
+            }
+            else {
+                document.getElementById("box").style.backgroundColor = "yellow"
+            }
+        };
+    </script>
+</body>
+
+</html>

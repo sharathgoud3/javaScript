@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HtmlIntro</title>
+    <style>
+        #box{
+            width:300px;
+            height:300px;
+            background-color: #FF5733;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick="toggle()">setBackground</button>
+    <div id="box"></div>
+   
+    <script>
+       
+       function toggle(){
+        if(document.getElementById("box").style.background=="" || document.getElementById("box").style.background=="#FF5733"|| document.getElementById("box").style.background=="rgb(255, 87, 51)"){
+        document.getElementById("box").style.background="#334DFF" 
+        }
+        else{
+            document.getElementById("box").style.background="#FF5733" 
+        }
+       }
+        
+    </script>
+</body>
+
+</html>

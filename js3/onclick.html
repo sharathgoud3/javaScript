@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HtmlIntro</title>
+
+</head>
+
+<body>
+    <button type="button">ClickMe</button>
+    <a href="../js1/jsintro.html">jsIntro</a>
+    <p onclick="test()">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum turpis ac dui suscipit, quis accumsan ante interdum. Pellentesque feugiat nulla at fringilla auctor. Morbi sit amet diam ante. In ac ex dui. Suspendisse nec mi pellentesque, gravida diam eu, sollicitudin tortor. Sed vel facilisis sem. Nunc mattis quam id efficitur semper. Fusce sapien massa, fringilla sed sem id, fringilla faucibus nulla. Morbi congue, mauris et euismod posuere, neque dui vulputate diam, eget placerat enim dui id nibh. Maecenas ullamcorper dignissim purus, ac pellentesque justo fringilla non. Vestibulum eros tellus, vestibulum in arcu volutpat, ullamcorper venenatis felis. Donec at felis tortor. Quisque vitae commodo purus, vulputate tristique lorem. Aliquam sit amet neque vel erat viverra condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        Mauris in porttitor ligula.
+    </p>
+    <img src="../../images/img2.jpg" onclick="sample()"/>
+    <div id="res"></div>
+    <script>
+       
+       function test(){
+        console.log(document.getElementById("res"));
+            document.getElementById("res").innerHTML="test function";
+       }
+       function sample(){
+        
+            document.getElementById("res").innerHTML="sample function";
+       } 
+    </script>
+</body>
+
+</html>
